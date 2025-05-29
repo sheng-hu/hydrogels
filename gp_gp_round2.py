@@ -56,13 +56,12 @@ from skopt import forest_minimize, gbrt_minimize, gp_minimize
 
 def wrapper(ratio_arr):
     """Wrapper function (real) used in gp_minimize().
-    Seems it also works.
 
     Args:
-        onedarr (_type_): _description_
+        ratio_arr ([float]): formula ratio array.
 
     Returns:
-        _type_: _description_
+        float: predicted value.
     """
     normalized_arr = ratio_arr / np.sum(ratio_arr)
     df_arr = [normalized_arr]

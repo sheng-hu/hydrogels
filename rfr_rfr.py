@@ -57,13 +57,13 @@ np.random.seed(237)
 
 
 def wrapper(ratio_arr):
-    """Wrapper function used in gp_minimize().
+    """Wrapper function (real) used in gp_minimize().
 
     Args:
-        onedarr (_type_): _description_
+        ratio_arr ([float]): formula ratio array.
 
     Returns:
-        _type_: _description_
+        float: predicted value.
     """
     normalized_arr = ratio_arr / np.sum(ratio_arr)
     df_arr = [normalized_arr]
