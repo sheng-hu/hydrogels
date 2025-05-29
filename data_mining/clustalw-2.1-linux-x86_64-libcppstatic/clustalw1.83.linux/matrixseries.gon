@@ -1,0 +1,7 @@
+CLUSTAL_SERIES
+
+
+MATRIX 61 100 /us1/user/julie/matrices/gon80.bla
+MATRIX 41 60 /us1/user/julie/matrices/gon120.bla
+MATRIX 21 40 /us1/user/julie/matrices/gon250.bla
+MATRIX 0 40 /us1/user/julie/matrices/gon350.bla

@@ -1,0 +1,1 @@
+[('nucleophilic - nucleophilic', 110), ('aromatic - aromatic', 14), ('aromatic - basic', 13), ('nucleophilic - basic', 8), ('nucleophilic - aromatic', 7), ('hydrophobic - aromatic', 6), ('hydrophobic - basic', 4), ('hydrophobic - hydrophobic', 4), ('basic - basic', 4), ('nucleophilic - hydrophobic', 3), ('nucleophilic - amide', 2), ('acidic - basic', 1), ('aromatic - acidic', 1)]

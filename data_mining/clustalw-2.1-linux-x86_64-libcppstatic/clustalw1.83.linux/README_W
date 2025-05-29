@@ -1,0 +1,280 @@
+******************************************************************************
+
+               CLUSTAL W Multiple Sequence Alignment Program
+                        (version 1.83, Feb 2003)
+
+******************************************************************************
+
+
+Please send bug reports, comments etc. to one of:-
+	gibson@embl-heidelberg.de
+	thompson@igbmc.u-strasbg.fr
+	d.higgins@ucc.ie
+
+
+******************************************************************************
+
+                  POLICY ON COMMERCIAL DISTRIBUTION OF CLUSTAL W
+
+Clustal W is freely available to the user community. However, Clustal W is
+increasingly being distributed as part of commercial sequence analysis
+packages. To help us safeguard future maintenance and development, commercial
+distributors of Clustal W must take out a NON-EXCLUSIVE LICENCE. Anyone
+wishing to commercially distribute version 1.81 of Clustal W should contact the
+authors unless they have previously taken out a licence.
+
+******************************************************************************
+
+Clustal W is written in ANSI-C and can be run on any machine with an ANSI-C
+compiler. Executables are provided for several major platforms. 
+
+Changes since CLUSTAL X Version 1.82
+------------------------------------
+
+1. The FASTA format has been added to the list of alignment output options.
+
+2. It is now possible to save the residue ranges (appended after the sequence
+names) when saving a specified range of the alignment.
+
+3. The efficiency of  the neighour-joining algorithm has been improved. This
+work was done by Tadashi Koike at the Center for Information Biology and DNA Data
+Bank of Japan and FUJITSU Limited.
+
+Some example speedups are given below : (timings on a SPARC64 CPU)
+
+No. of sequences        original NJ     new NJ
+     200                0' 12"          0.1"
+     500                9' 19"          1.4"
+     1000               XXXX            0' 31"
+
+Changes since version 1.8 
+--------------------------
+
+1. ClustalW now returns error codes for some common errors when exiting. This
+may be useful for people who run clustalw automatically from within a script.
+Error codes are: 
+	1	bad command line option
+	2	cannot open sequence file
+	3	wrong format in sequence file
+	4	sequence file contains only 1 sequence (for multiple alignments)
+
+2. Alignments can now be saved in Nexus format, for compatibility with PAUP, 
+MacClade etc. For a description of the Nexus format, see:
+Maddison, D. R., D. L. Swofford and W. P. Maddison.  1997.
+NEXUS: an extensible file format for systematic information.
+Systematic Biology 46:590-621.
+
+3. Phylogenetic trees can also be saved in nexus format.
+
+4. A ClustalW icon has been designed for MAC and PC systems.
+
+
+Changes since version 1.74 
+--------------------------
+
+1. Some work has been done to automatically select the optimal parameters
+depending on the set of sequences to be aligned. The Gonnet series of residue
+comparison matrices are now used by default. The Blosum series remains as an
+option. The default gap extension penalty for proteins has been changed to 0.2
+(was 0.05).The 'delay divergent sequences' option has been changed to 30%
+residue identity (was 40%).
+
+2. The default parameters used when the 'Negative matrix' option is selected
+have been optimised. This option may help when the sequences to be aligned are
+not superposable over their whole lengths (e.g. in the presence of N/C terminal
+extensions).
+
+3. A bug in the calculation of phylogenetic trees for 2 sequences has been
+fixed.
+
+4. A command line option has been added to turn off the sequence weighting
+calculation.
+
+5. The phylogenetic tree calculation now ignores any ambiguity codes in the
+sequences. 
+
+6.  A bug in the memory access during the calculation of profiles has been
+fixed. (Thanks to Haruna Cofer at SGI).
+
+7. A bug has been fixed in the 'transition weight' option for nucleic acid
+sequences. (Thanks to Chanan Rubin at Compugen).
+
+8. An option has been added to read in a series of comparison matrices from a
+file. This option is only applicable for protein sequences. For details of the
+file format, see the on-line documentation.
+
+9. The MSF output file format has been changed. The sequence weights
+calculated by Clustal W are now included in the header.
+
+10. Two bugs in the FAST/APPROXIMATE pairwise alignments have been fixed. One
+involved the alignment of new sequences to an existing profile using the fast
+pairwise alignment option; the second was caused by changing the default
+options for the fast pairwise alignments.
+
+11. A bug in the alignment of a small number of sequences has been fixed.
+Previously a Guide Tree was not calculated for less than 4 sequences.
+
+
+Changes since version 1.6
+-------------------------
+
+1. The static arrays used by clustalw for storing the alignment data have been
+replaced by dynamically allocated memory. There is now no limit on the number
+or length of sequences which can be input.
+
+2. The alignment of DNA sequences now offers a new hard-coded matrix, as well
+as the identity matrix used previously. The new matrix is the default scoring
+matrix used by the BESTFIT program of the GCG package for the comparison of
+nucleic acid sequences. X's and N's are treated as matches to any IUB ambiguity
+symbol. All matches score 1.9; all mismatches for IUB symbols score 0.0.
+
+3. The transition weight option for aligning nucleotide sequences has been
+changed from an on/off toggle to a weight between 0 and 1.  A weight of zero
+means that the transitions are scored as mismatches; a weight of 1 gives 
+transitions the full match score. For distantly related DNA sequences, the
+weight should be near to zero; for closely related sequences it can be useful
+to assign a higher score.
+
+4. The RSF sequence alignment file format used by GCG Version 9 can now be
+read.
+
+5. The clustal sequence alignment file format has been changed to allow
+sequence names longer than 10 characters. The maximum length allowed is set in
+clustalw.h by the statement:
+#define MAXNAMES	10
+
+For the fasta format, the name is taken as the first string after the '>'
+character, stopping at the first white space. (Previously, the first 10
+characters were taken, replacing blanks by underscores).
+
+6. The bootstrap values written in the phylip tree file format can be assigned
+either to branches or nodes. The default is to write the values on the nodes,
+as this can be read by several commonly-used tree display programs. But note
+that this can lead to confusion if the tree is rooted and the bootstraps may
+be better attached to the internal branches: Software developers should ensure
+they can read the branch label format.
+
+7. The sequence weighting used during sequence to profile alignments has been
+changed. The tree weight is now multiplied by the percent identity of the
+new sequence compared with the most closely related sequence in the profile.
+
+8. The sequence weighting used during profile to profile alignments has been
+changed. A guide tree is now built for each profile separately and the
+sequence weights calculated from the two trees. The weights for each
+sequence are then multiplied by the percent identity of the sequence compared
+with the most closely related sequence in the opposite profile.
+
+9. The adjustment of the Gap Opening and Gap Extension Penalties for sequences
+of unequal length has been improved.
+
+10. The default order of the sequences in the output alignment file has been
+changed. Previously the default was to output the sequences in the same order
+as the input file. Now the default is to use the order in which the sequences
+were aligned (from the guide tree/dendrogram), thus automatically grouping
+closely related sequences.
+
+11. The option to 'Reset Gaps between alignments' has been switched off by
+default.
+
+12. The conservation line output in the clustal format alignment file has been
+changed. Three characters are now used:
+'*' indicates positions which have a single, fully conserved residue
+':' indicates that one of the following 'strong' groups is fully conserved:-
+                 STA
+                 NEQK
+                 NHQK
+                 NDEQ
+                 QHRK
+                 MILV
+                 MILF
+                 HY
+                 FYW
+
+'.' indicates that one of the following 'weaker' groups is fully conserved:-
+                 CSA
+                 ATV
+                 SAG
+                 STNK
+                 STPA
+                 SGND
+                 SNDEQK
+                 NDEQHK
+                 NEQHRK
+                 FVLIM
+                 HFY
+
+These are all the positively scoring groups that occur in the Gonnet Pam250
+matrix. The strong and weak groups are defined as strong score >0.5 and weak
+score =<0.5 respectively.
+
+13. A bug in the modification of the Myers and Miller alignment algorithm
+for residue-specific gap penalites has been fixed. This occasionally caused
+new gaps to be opened a few residues away from the optimal position.
+
+14. The GCG/MSF input format no longer needs the word PILEUP on the first
+line. Several versions can now be recognised:-
+      1.  The word PILEUP as the first word in the file
+      2.  The word !!AA_MULTIPLE_ALIGNMENT or !!NA_MULTIPLE_ALIGNMENT
+          as the first word in the file
+      3.  The characters MSF on the first line in the line, and the
+          characters .. at the end of the line.
+
+15. The standard command line separator for UNIX systems has been changed from
+'/' to '-'. ie. to give options on the command line, you now type
+
+     clustalw input.aln -gapopen=8.0
+
+instead of  clustalw input.aln /gapopen=8.0
+
+
+                      ATTENTION SOFTWARE DEVELOPERS!!
+                      -------------------------------
+
+The CLUSTAL sequence alignment output format was modified from version 1.7:
+
+1. Names longer than 10 chars are now allowed. (The maximum is specified in
+clustalw.h by '#define MAXNAMES'.)
+
+2. The consensus line now consists of three characters: '*',':' and '.'. (Only
+the '*' and '.' were previously used.)
+
+3. An option (not the default) has been added, allowing the user to print out
+sequence numbers at the end of each line of the alignment output.
+
+4. Both RNA bases (U) and base ambiguities are now supported in nucleic acid
+sequences. In the past, all characters (upper or lower case) other than
+a,c,g,t or u were converted to N. Now the following characters are recognised 
+and retained in the alignment output: ABCDGHKMNRSTUVWXY (upper or lower case).
+
+5. A  Blank line inadvertently added in the version 1.6 header has been taken
+out again.
+
+                              CLUSTAL REFERENCES
+                              ------------------
+
+Details of algorithms, implementation and useful tips on usage of Clustal
+programs can be found in the following publications:
+
+Jeanmougin,F., Thompson,J.D., Gouy,M., Higgins,D.G. and Gibson,T.J. (1998)
+Multiple sequence alignment with Clustal X. Trends Biochem Sci, 23, 403-5.
+
+Thompson,J.D., Gibson,T.J., Plewniak,F., Jeanmougin,F. and Higgins,D.G. (1997)
+The ClustalX windows interface: flexible strategies for multiple sequence 
+alignment aided by quality analysis tools. Nucleic Acids Research, 24:4876-4882.
+
+Higgins, D. G., Thompson, J. D. and Gibson, T. J. (1996) Using CLUSTAL for
+multiple sequence alignments. Methods Enzymol., 266, 383-402.
+
+Thompson, J.D., Higgins, D.G. and Gibson, T.J. (1994) CLUSTAL W: improving the
+sensitivity of progressive multiple sequence alignment through sequence
+weighting, positions-specific gap penalties and weight matrix choice.  Nucleic
+Acids Research, 22:4673-4680.
+
+Higgins,D.G., Bleasby,A.J. and Fuchs,R. (1992) CLUSTAL V: improved software for
+multiple sequence alignment. CABIOS 8,189-191.
+
+Higgins,D.G. and Sharp,P.M. (1989) Fast and sensitive multiple sequence
+alignments on a microcomputer. CABIOS 5,151-153.
+
+Higgins,D.G. and Sharp,P.M. (1988) CLUSTAL: a package for performing multiple
+sequence alignment on a microcomputer. Gene 73,237-244.

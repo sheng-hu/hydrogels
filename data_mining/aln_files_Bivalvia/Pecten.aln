@@ -1,0 +1,392 @@
+CLUSTAL O(1.2.4) multiple sequence alignment
+
+
+XP_033747783.1      MASYTKQKTSMASY--TKQKTSKPSYTKQKTPIPSYTKQTISMASYTKKKTPIPSYTKQK
+XP_033725153.1      MTNKGEGANTVTREDGPSVQSNQASYGYSNQAAHSYSNQ----ASYGYSNQAAHGYSNQA
+XP_033726109.1      ------------------------------------------------------------
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      MQ--------------TDFAKKKRKWDWNRQNLR---------ISLGEELQRKVPYTE--
+XP_033755849.1      ------------------------------------------------------------
+XP_033739279.1      ------------------------------------------------------------
+XP_033756230.1      MV------------------------------ANTYISCTLL-----FTFPPLFPYT---
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      ------------------------------------------------------------
+XP_033760713.1      ------------------------------------------------------------
+                                                                                
+
+XP_033747783.1      TPIPSYTKQTISMASYTKQKTSISSYTKQKTSMASYTKQKISIPSYTKQKT--SIPSYTK
+XP_033725153.1      D--------------HGYSNHASYGYSNQAA------------HGYSNQADHGYRNQADH
+XP_033726109.1      ------------------------------------------------------------
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ---------------MGRKKSNTEKYSPNYVEETHNS-TEKYTPNYVEE-THNSTEKYSP
+XP_033755849.1      ------------------------MYRSPPTSHQTYCSPPISHQTYCSPPT--SHQAYYS
+XP_033739279.1      ----------------------MSGL-----------------------------PISRH
+XP_033756230.1      ----------------------IYSY-----------------------------ATSKP
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      ------------------------------------------------------------
+XP_033760713.1      ------------------------------M------------S--------GT-KTFNH
+                                                                                
+
+XP_033747783.1      QTISMASY--TKQKTSIPSNTKQKTLIPSYTKQK------TSIPSYTKQKTSIPSYTKQK
+XP_033725153.1      GYSNQASYGYSNQAAHGYSNQ----ASYGYSNQDAHSYSNQASYGYSNQD--AHSYSNQA
+XP_033726109.1      ----MS------------------------------------------------------
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      NYVEETHSKETHNSTEKYSP--------NYVEET-HNNTEKYTPNYVEE---THNSTEKY
+XP_033755849.1      PPISHQTY--RSHQ----------------------------------------------
+XP_033739279.1      VDIQMSGL--PISRHVDIQMS--------------------GLPI------------SRH
+XP_033756230.1      LTVLLLSY------TLKPTHS--------------------PTPT------------HSH
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      ------------------------------------------------------------
+XP_033760713.1      NYI----------------NN----LS---------------RILYHNT-----------
+                                                                                
+
+XP_033747783.1      TPIPSYTKQKTSIPSYAKQKTSMASNTKQKTSIPSYTKQKTPIPSYTKQTISMASYTKQT
+XP_033725153.1      --SYGYSNQAAHG----------YSNQA----SYGYSNQ-DAHGY-----SNQASYGYSN
+XP_033726109.1      ----------THI---VNDESGMST------------------------HIVTDEYGMSN
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      --TPNY------I----------KENTE----KYSPNYVEETHNS-----TEKYTPNYVE
+XP_033755849.1      ------------------------------------------------------------
+XP_033739279.1      -----VDIQMSGLP------------------------------ISRHFDIQMSGLSI--
+XP_033756230.1      TPSKPLTVLLPHIL----------------------------------IHPQTHSLSY--
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      ------------------------------------------------------------
+XP_033760713.1      -------SKVRIL----------YHNTS----K--------------------VRILYHN
+                                                                                
+
+XP_033747783.1      TSIPSYTKRKTSI--PSYTKKKTPIPSYTKQTTSIPSYTKRKTSMASY-TKQK--TSMAS
+XP_033725153.1      QDAHSYSNQASYGYSNQAAHG------YSNQA----SYGYSN----------------QA
+XP_033726109.1      -HIA---NNESGM------------------STHI---VNDESGMSNHIANNE--SGMST
+XP_033759073.1      -----------------------------------------------------------M
+XP_033755724.1      -------MILGGC--KH----------STIPS--------------VPIISS-KSPAL--
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ET-HNSTEKYTPNYIKENTEK------YTPN------YVEEN------------------
+XP_033755849.1      ----------------------------------------------TY-CSPP--TSHQA
+XP_033739279.1      SRHFDI--QMSGL--PISRH-------FDIQ-----------------------------
+XP_033756230.1      SHTFSYTLKPTHC--PTPTH-------SHTPS--------------NPLTVL-HPHILI-
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      --------MVKRC--TRPPH-------QTTRP--------------DHQTRQPDPTTWPD
+XP_033760713.1      PS-----KDRIYCTITHPRSE------YCTT-------THPR----------------SE
+                                                                                
+
+XP_033747783.1      Y-TKQKPSMASYRKKKTSIPS-YT--KQTVSMASYTKKKT---------PIPSYTKR---
+XP_033725153.1      Y-TT------------TATRPPTA------------------------------------
+XP_033726109.1      HIVTDESGMSTHI-VNDESPE-DC--RH-------LKPSE---------VKPSEVKP---
+XP_033759073.1      Y-PE-----------TYLMYPETC------------------------------------
+XP_033755724.1      ---KKTPSLQVSHPKK------DS-------LPPSLPPS--------------EG--LPS
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ----------------TEKYTPNC------------------------------------
+XP_033755849.1      Y-CS----------H----QT-YC--SPPTKLTAHTKRTA---------HRPSHTKR---
+XP_033739279.1      -----MSGLPISRHFD------IQMSGLPIKMSNIRCLD--------------QS--LDA
+XP_033756230.1      --HPQTHSLSYSHTFS------YT-------LKPTHCP----------------------
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      H-QTQQPGPTISSDHKTRPPHPTTRPDQPIRLPGPTTPSDHPIRPPHPTTRPDHQIRLPG
+XP_033760713.1      Y-CT-----------TTHPRTEYC------------------------------------
+                                                                                
+
+XP_033747783.1      --KTSIPSNTKQKPSIPSNTKQKPS----------IPSNTKQKP-------SIPSNTKQK
+XP_033725153.1      -TVT-RPPTA--TATRPPTAI--ATRPPT--ATATRPPT--ATA-------TRPTMA--T
+XP_033726109.1      --FEIKPSELKPSEVKPSEVKSSEL----------KPSELK------------PSEVKPS
+XP_033759073.1      -TQ---------------------------------------------------------
+XP_033755724.1      ----SKSPTLRRTPSKSPT----LG--R-------TPFLQVSHS-------QKDS---LP
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      -VEETHNSTEK---YSPNYVEENTEKYTPNYVEETHNSTEKYTPNYVEENTEKYTPNYVE
+XP_033755849.1      --TAHRQSNTKRTTHCPSNTKRTAH----------RPSHTKRTA-------HRPTHTKRT
+XP_033739279.1      AKTLSQPPSLPNTPSKPPS----LP--R-------QDRARPTTA-------RTTEHPGQP
+XP_033756230.1      ------SPTHSHTPSNPLT----VL----------LPHI-LIHP-------QTHS---LS
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      PTI---SSDHKTRPPDPTTRPDHLIRPQ-------DPTTRPDHP-------NRP----QD
+XP_033760713.1      -TIT-HPRSEYCTTTHPRSEYCTTTHPRSEYCTTTHPRTEYCTT-------THPRIEYCT
+                                                                                
+
+XP_033747783.1      PSIPSNTKQ-------KTSIPS--YT-----KQKTPIPSYTKQKT--SIPSYAKQKTSMA
+XP_033725153.1      ATMPPTAT---------ATRPPT--ATATRPTTAIA--------T--RPPT--ATATRP-
+XP_033726109.1      EVKPSEVKL-------SEVKPS--EV-----KPSEVKPSE--------------------
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      PSLPPSEGL----------PSS--KS----------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ETHNSTEKYSPNYVEENTEKYTPNYVEETHNSTEKYTPNYIKENTEKYTPNYVEENTEKY
+XP_033755849.1      AHRPSHTKR-------TTHRPS--HT-----KRTAHHPSLTK------------------
+XP_033739279.1      PAQPP---A----------RPN--TS---------------------------------P
+XP_033756230.1      YSHTFSYTL----------KPT--HC---------------------------------P
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      PTTPSDYLA----------RPT--HP-----TTRPDHP------I--RLPGPTTPSDHKT
+XP_033760713.1      TTHPRTDYCT-------TTHPRTEYCPTTHPRTEYCTT------T--HPRTQYCTTTHPR
+                                                                                
+
+XP_033747783.1      SNTKQKTSIP------SY--TKQKTPIPSYTKQ--TISKASYTKQTTSIPSYTKRKTSIP
+XP_033725153.1      -PTAIATRPPTATAT--RPHTATATRSPADIAT-----RPPTA--TATRPPTAIAT----
+XP_033726109.1      -------------------------------------LKPSQVKLSEVKPSEVKPSEVKP
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      -PT-LRRT-P------S-----KSPTLGRT-----PFLQVSHPQKDSLH------VS---
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      TPNCVEETHN-----------STEKYSPNYVEENTEKYTPNYV--EETHNSTEKY-----
+XP_033755849.1      --------------------------------R--TTHRPSHTKRTTHRPSHTKRTAHHP
+XP_033739279.1      EPP-PATTSR------A-----TNPPADRR-----R----TAPAR-------------TT
+XP_033756230.1      TPT-HSHT-P------S-----N--PLTVL-----LLHILIHPQTHSLS------YSHTF
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      RPT-HPTTWP------DHPIRPQDPTIPSD-----YLARPPHPTTRPDHPIRPQDPTDPS
+XP_033760713.1      TQYCITTHPRTQYCTTTHPRTQYCTTT----HP-----RTEYC--TTTHPRTEYCTTHPR
+                                                                                
+
+XP_033747783.1      SYTKRKTS-----------IPSYTKQKTSMASFTKQTTSIPSYT---KRKTSIPSYTKR-
+XP_033725153.1      -------RPPTAIA--T--RPTMATAT------RPPTAT--AT--RPHTAKAT-------
+XP_033726109.1      SEVKPSEV-----------KPSEVKPS-EVKPFE----VKPSEV---KPSEVKPSEVKS-
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      ---------------------------------------------HPQKDSLSPSLPLSE
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      -------------------TPNYVEET------HNNTEKYTPNYVEENTEKYTPNYVEEN
+XP_033755849.1      SLTKRTAH-----------RPSHTKRNAHRQSHTKRTAHHPSHT---KRTAHRPSHTKRT
+XP_033739279.1      ARTTE-------------------------------------------------------
+XP_033756230.1      SYTLKPTHSP---------TPTHSHTP-----SNPLTVLLPHILIHPQTHSLSYSYTFSY
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      DYLARPPHPTT--------RPDHQTR-------PPDPTTWPDHLIRPQDPTTRSDNQTRP
+XP_033760713.1      SEYCTTTHPRTEYCTTTHPRTEYCTTT------HPRTEYCTTT--HPRTEYCTTTQ----
+                                                                                
+
+XP_033747783.1      ---------KTS------IPSYTKQKTSMASY---------TKQKPSMASYRKKKTSIPS
+XP_033725153.1      -----------------RT-PTAT--ATRPPT--------ATATRPPT----------AT
+XP_033726109.1      ---------SEL------KPSE------LKPS-E----VKPSEVKPSEVKLSE-------
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      GLPFSK------------SPT--TSRTPF--L------QVSHPQKDSLPPSLP-----PS
+XP_033755725.1      -----M------------SPN--LRRTPF--L------HVSLPQKDSLPPSLP-----PS
+XP_033755816.1      TE--------------KYTPNYVEENTEKYTP------NYVEETHNNT----------EK
+XP_033755849.1      AHT----KRTAH------LPSHIKRTAHLTPN-V----LLTAHLTPNVLL-----TSHQT
+XP_033739279.1      -------------------------------------------------PART-----TE
+XP_033756230.1      TLKTTH------------SPTPTHSHTPSNPLTVLLPHILIHPQTHSLSYSHT-----FS
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      SHPTTRPDNQTRPPQRPQDPTTPSDHKTRPPHPTTWPDHPIRPQDPTTPSDHK-----T-
+XP_033760713.1      ----------------PRS-EYCT--TTHPRT------EYCTTTHPRT----------EN
+                                                                                
+
+XP_033747783.1      YTKQTVSMASYTKKKTPIPSYTKQK-------TPMASYTKQKTSIPSYTKQKTSIPSYTK
+XP_033725153.1      ATRLP--T---ATA--TRPTTATLTRPPTA--TATKPPTAIATRPPT--A-TSTRPPT--
+XP_033726109.1      --------------------------------------VKPSEVKPSQVKLSEVKPSEVK
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      EGLPP----------SKSPTF--RR-------TP---F-LQVSHPRKDSR-PPSLPP-SE
+XP_033755725.1      EGLPP----------SMSPTL--RR-------TP---F-LQVSHTRKDVL-PPSLPP-SE
+XP_033755816.1      YTPNY--VEE--NTEKYTPNYVEETHNNTEKYTP-----NYVEE-------NTEKYTPNY
+XP_033755849.1      YCSPPISHQTYCS--PPISHQ-----------TP--SHTKRTGHRPPHTKRTTHRPSHTK
+XP_033739279.1      NGAQP----------PARPN------------TP---A--RAPAGRPPGK-PPARPNP--
+XP_033756230.1      YTLKP----------THCPTPTHSH-------TPSNPLTVLLPHISYTLK-PTHCPTPTH
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      RPPDP----------TT---------------RPDHP--IRLPHPTTPSDHQTRLPDPT-
+XP_033760713.1      CTTHP--RTEYCTTIHPRTEYCTITHPRTEYCTTTHPRTEYC---------TTTHPRTKY
+                                                                                
+
+XP_033747783.1      QKTPIPSNTKQKPSIPS-----------------NTKQK----------TSKPSYTKQ--
+XP_033725153.1      ATATRP--TMATATRPPTA--TATRPPT--ATATRPTTATAAHSYSNQAAHGYSNQASYN
+XP_033726109.1      PSEVKPSEVKPSEVKPS-----------------EVKPS----------EVKPSAVKPYE
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      G--LPPSKSPTISRTPF-----------LQV--SHHQQD----------SLSP-------
+XP_033755725.1      V--LPSSKSPTLERTPF-----------LQV--SHPKKD----------SLPP-------
+XP_033755816.1      VEENTE--KY----TPNYVEENTEKYTPNYVEETHNNTEKYTPNYVEENTEKYTPN----
+XP_033755849.1      RTAHRPSHTKRTGHRPP-----------------HTKRT----------THRPSHTKR--
+XP_033739279.1      ---------PTTPARPN-----------PPA--TNRRND----------RT-----RR--
+XP_033756230.1      S--HTPSN-PLTVLLPH------------IL--IHPQTH----------SLSYSHTFS--
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      -------TRPDHPIRPP-----------NQT--TRPEHK----------TRPPDPNTR--
+XP_033760713.1      CTTTHPRTEYCTTTHPRTEYCTTTHPRTEYCTTTHPRT-----EYCTT-TH---PKTEYC
+                                                                                
+
+XP_033747783.1      ---TISMASYT------------------------KKK-----TPIPSYTKQ----KTPM
+XP_033725153.1      YS-NQAAHSYSNQAAHGYSNQASYGISNQATHGYSN----QAS-YG--YSNQADHGYSNQ
+XP_033726109.1      VKLSEVKPSEV------------------------KPS-----EVKPSEVKP----SEVK
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      -------------------------------------------SLPPSEGLPPSKPPTLR
+XP_033755725.1      -------------------------------------------CLPPYEGLPPSMSPTLG
+XP_033755816.1      YV-EENTEK--------YSPNYVEENTEKYTPNYVEETHNSTEKYTPNYVEENTEKYTPN
+XP_033755849.1      ---TAHRPSHT------------------------KRT-----AHSPSHTKR----TGHR
+XP_033739279.1      ---------TTA-----------------------ARRHP---PQPPSLPNPPSQPPTTE
+XP_033756230.1      ---------YTL-----------------------KPTH----CPTPTHSHTPSNPLTVL
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      -------PDHQT-----------------------RPPDP---TTRPDHQTRPTDPTTPS
+XP_033760713.1      KI-THPRSEYRTT----IHPRTEYCTTTHPKTEYCKITHPRSE-YR--TTTHPRSEYCTI
+                                                                                
+
+XP_033747783.1      -----ASYTKQKTSIPSYTKQKTSIPSYTKQKTSIPSYTKQKTPIPSNTKQKPSIPSN--
+XP_033725153.1      VD---HGYNNQ--AAHSYSNQ--AAHSYSNQ--AAHGYSNQADHGYSNQASYGYSNHAAH
+XP_033726109.1      PSEVKPSEVKPSEVKPSEVKPSEVKPSEVKPSEVKPSEVKLSEVKPSEVKPSEVKPSE--
+XP_033759073.1      ----RHIS----------------------------------------------------
+XP_033755724.1      RTPFLQVSHPQKDSLP---------------PG---------------------LPP---
+XP_033755725.1      RTPFLQVSHPQKDSLP---------------PS---------------------LPS---
+XP_033755816.1      CVE-ETHYSTEK-YSPNYVEETHNTEKYTP------NYVEENTEKYTPN--YVE--ENTE
+XP_033755849.1      -----PPHTKRTAHRPSHTKRTAHRPSHTKRTAHRPSHTKRTAHRPSHTKRTAHSPSH--
+XP_033739279.1      PPSLT---TLLTTSLA-YRNTPAQ----PR--TTEPAAQTARTTE---RPHDRTRPHN--
+XP_033756230.1      L-P-HILIHPQTHSLS-YSHTFSY----TLKPTHSPTPTHSHTPS---NPLTVLLPHI--
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      ---------DHKTQPP-YPTTPSDHPIRPPDPTTRPD--HQT------RPPDPTTPSD--
+XP_033760713.1      THP-RTEYCTITHPRSEYCTTTHPRSEYCTTTHPRSEYCTTT-H---PRTEYCTTTHPRT
+                                                                                
+
+XP_033747783.1      TKQKT--SIPSYTK---------Q-TISMASYTKQKTPIPSYTKQTISMA----------
+XP_033725153.1      GYS----NQASYCYSNQAAHGYSNQ----ASYGYSNQDAHSYSNQASYGYSNQVA-----
+XP_033726109.1      VKPSE--VKPSEVK---------L-SEVKLSEVKLSEVKP--------------------
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      KYT------PNYVE--ENTEKYTP------NYV--EENTEKYTPNYVEENTEENT-----
+XP_033755849.1      TKRTA--HRPSHTK---------R-TA---------------------------------
+XP_033739279.1      ----R--PHDRTRP-----HNRPH-DRADR---ARRTTARTYRTRPHDQHART-------
+XP_033756230.1      ----L--IHPQTHS-----LSYSH-TFSYTLKLTHYSHTFSYTLKPTHCPTPT-------
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      NQTRP--PHPTTRP-----D--------HQTRLPDPTTRPDYQTRPPDPTTRLDHQTRPT
+XP_033760713.1      EYCTITHPRTEYCTTTHPRSEYCTTTHPRTEYCTTTHPRTEY------CTTTHPR-----
+                                                                                
+
+XP_033747783.1      -------------------SYTKKK------TSI------P----SYT----------KQ
+XP_033725153.1      ------HGYS----NQASYGYSNQAAHGYSN----------QAAYGYSN--QASYG--YS
+XP_033726109.1      ------------------------------------------------------------
+XP_033759073.1      ------------------------------------------------------------
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ------LNYVEETSNSTEK-----------------------------------------
+XP_033755849.1      ------------------------------------------------------------
+XP_033739279.1      -------------TARTT------------------------------------------
+XP_033756230.1      -------------HSHTPS-----------------------------------------
+XP_033733521.1      -------------------------MTTYATPTY------ATPTYAMTTNATPTYA--TP
+XP_033760700.1      DPTTPSEHQTRPPHPTTPSDYLARPPHPTTRPDHPIRTPNPSTPSDYLARPPHPNTRPDH
+XP_033760713.1      ------TEYCTTTHPRTEYCITTHPMTEYCTTTH------PRTEYCTTTHPRTEYC--IT
+                                                                                
+
+XP_033747783.1      TISMASYT---------------------------------KKKTSIP-----------S
+XP_033725153.1      NQAAHGYSNQAAHGYSNQASYGYSNQAAHGYSN----QASYGYSNQADHGYSN----QAS
+XP_033726109.1      ------------------------------------------------------------
+XP_033759073.1      -----------------------------------------CTQRHVPRDIYH-------
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ------------------------------------------------------------
+XP_033755849.1      ------------------------------------------------------------
+XP_033739279.1      -----------------------------------------DTRAQPPHDRARPHDRAAR
+XP_033756230.1      ------------------------------------N----PLTVLLPHILIHPQTHSLS
+XP_033733521.1      TYAMTTYATPT-Y---ATSTYAMTTYATPT----------YAMTTNATPTYA-----MTT
+XP_033760700.1      PIRLPGPTTPSEHLARP-------PHPTTRPDHQTRP----PDPTTWPDHLIRPQDPTTR
+XP_033760713.1      THPMTEYCTTT-H---PRTEYCTITHPRTEYCTITHPRTEYCTTTHPRTDYCITTHPMTE
+                                                                                
+
+XP_033747783.1      YTKQTISM------------ASYTKQKTSIPSYTKRKTSILSNTKQKPSIPSNTKQKPSI
+XP_033725153.1      YGYSNQDAHSYS------NQACYGYSNEASYGYSNQADHGYSNE-----ASYGYSNQADQ
+XP_033726109.1      ------------------------------------------------------------
+XP_033759073.1      ---------------VPR-------------------------------DMYPETYLMYP
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ------------------------------------------------------------
+XP_033755849.1      ----------------------------------------------------------HS
+XP_033739279.1      TTPA----------------RPNPPAQTALQDR----T--------HDRTPAQPPSRPNP
+XP_033756230.1      YSHT----------------FSYTLKPTHCPSP----T--------HSHTPSNPLT----
+XP_033733521.1      YATPT-------------N-----------------------------------------
+XP_033760700.1      SDNQTRPS----------HPTTRPDHPIRLPGPTTRPD--------HPIRPHHPTTRPDQ
+XP_033760713.1      YCTTTHPKTEYCKITHPRSEYCTTTHPRSEYCTITHPRTEYCTT-THPRTEYCTTTHPRS
+                                                                                
+
+XP_033747783.1      PSNTKQKPSIPSNTKQ----KTSMASY-----TKKMLME--LRC-------------GHL
+XP_033725153.1      GYS-------NEASYG----YSNQASYGYSN-EASD---------------------GY-
+XP_033726109.1      -------------------------------SEVKHLWD--LRN-------------SNI
+XP_033759073.1      ETC-------TQRHI-------------------------------------------S-
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ------------------------------------------------------------
+XP_033755849.1      PSHTKRTTHCPSNPKR----TAHRSPHTKRTAHRLLLFV--TIC-------------IYF
+XP_033739279.1      PSLPPAGPGHPAQ-LP---------RYR-------------------------------T
+XP_033756230.1      VLLPHI-LIHPQTHSL---------SYS--------------------------------
+XP_033733521.1      AM----------------------------------------------------------
+XP_033760700.1      PIR-LPGPTTPSDHKARPPDPTTRSDYLARPSHPTTRPDHQIRQPDPTISSDHKTRPPDP
+XP_033760713.1      EYC-------TTAH--------PRTEYCTTT-HPRT---------------------EY-
+                                                                                
+
+XP_033747783.1      AM----------------------------------------------------------
+XP_033725153.1      ----SNQA--DHGYSI--RPPT--AT--ATMPPTAIA--TRPPT--AT----ATRPHTAI
+XP_033726109.1      AGS---------------------------------------------------------
+XP_033759073.1      ----CTQRHVPRDI--SHVPRDMYPE--TYLMYPET----------CT----Q---RHIS
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ------------------------------------------------------------
+XP_033755849.1      YPTVFF------------------------------------------------------
+XP_033739279.1      ARTTYPRPNPPHDRTRPHNRPHTEPGRTTEHARTTAADRTRPTTARTTEPAPHNRPKDRT
+XP_033756230.1      --SHFRSLKPTH------------------------------------------------
+XP_033733521.1      ------------------------------------------------------------
+XP_033760700.1      TTPTFPKTRPPHPTTRPDHP-IRLPGPTTP------------SDHKTRPPHPTTRPDHPI
+XP_033760713.1      ----CTTTHPRTEYCTTTHPRTEYCT--TTHPRTEYCTTTHPRTEYCT----TTHPRTEY
+                                                                                
+
+XP_033747783.1      ------------------------------------------------------------
+XP_033725153.1      A--TRPPTA----TATRTPTATATRPPTATA----TRS-------PTAIATRPP-----T
+XP_033726109.1      ------------------------------------------------------------
+XP_033759073.1      CTQRHVPRD------------ISHVPRDMYPETYLMYPETYLMYPETCTQ---R---HIS
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ------------------------------------------------------------
+XP_033755849.1      ------------------------------------------------------------
+XP_033739279.1      RPHNRP-HDRSRGTTPGQRP-KKTRPHNLTRPHNRTRPKPP----------------TPN
+XP_033756230.1      ------------------------------------------------------------
+XP_033733521.1      ------------TTNATPTYAMTTNATPTYAMT--TYAT-----PTYAMTTNAT---PTY
+XP_033760700.1      RPQDP--------TTPS-EH-KTRPPHPTTRPDHQTRPIDPIT--PSDHQTRPPDPTTPS
+XP_033760713.1      CTTTHPRTEYCATTHPRTEYCTTTHPRTEYCTT--TYPK-----TEYCTTTHPR---TEY
+                                                                                
+
+XP_033747783.1      ------------------------------------------------------------
+XP_033725153.1      ATATRPPTAIA-----TRPPT----ATQPGR--PQLQ--Q--------------------
+XP_033726109.1      ------------------------------------------------------------
+XP_033759073.1      CTQRHVPRDIS---HV------------PRDMYPETYLVYPETYLMYPETYLVYPETYLV
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ------------------------------------------------------------
+XP_033755849.1      ------------------------------------------------------------
+XP_033739279.1      PRTTEPPSRAN-----------------P-------------------------------
+XP_033756230.1      ------------------------------------------------------------
+XP_033733521.1      A-----------------------------------------------------------
+XP_033760700.1      DHQTRPPDPTTPSDYQTRPPDPT----TPSDHQ---------------------------
+XP_033760713.1      CTTTHPRSEYC---TITHPRTEYCTTTHPRSEYCTIT--HPRTE------YCTTTHPRSE
+                                                                                
+
+XP_033747783.1      ------------------------------------------------------------
+XP_033725153.1      ----------P------GLLR-----LQQPGR----------------------------
+XP_033726109.1      ------------------------------------------------------------
+XP_033759073.1      YPETYLVYPETYLMYPETYLVYPETYLVYPETNL---VYPET-YLV--YPE-TYLVYPET
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ------------------------------------------------------------
+XP_033755849.1      ------------------------------------------------------------
+XP_033739279.1      --------------------------PHQPPH----------------------------
+XP_033756230.1      ------------------------------------------------------------
+XP_033733521.1      ----------T------PICA-----MTTNATP---------------------------
+XP_033760700.1      ------TRP-P-------DPTTPSDYQTRPPHQTTPSDHQ--------------------
+XP_033760713.1      YCTT--THPRT------EYCT-----ITHPRTEYCTITHPRSEYCTTTHPRSEYCTTTTP
+                                                                                
+
+XP_033747783.1      ------------------------------------------------------------
+XP_033725153.1      ---------------------------------------PRL------------------
+XP_033726109.1      ------------------------------------------------------------
+XP_033759073.1      YLMYPETCTQRHISCTQRYVPRDI--SHVPRDMYPETYLMYPETCTQRH---ISCTQR--
+XP_033755724.1      ------------------------------------------------------------
+XP_033755725.1      ------------------------------------------------------------
+XP_033755816.1      ------------------------------------------------------------
+XP_033755849.1      ------------------------------------------------------------
+XP_033739279.1      ------------------------------------------------------------
+XP_033756230.1      ------------------------------------------------------------
+XP_033733521.1      -------------TCPQ-------------------------------------------
+XP_033760700.1      ---------------------------------------------------------TRP
+XP_033760713.1      STEYCTTTTPREKNCTTTHPRSEYCTTTHPRSEYCTTTHPRTEYCTTTHPRSEYCTTTHP
+                                                                                
+
+XP_033747783.1      ------------------------
+XP_033725153.1      ------------------------
+XP_033726109.1      ------------------------
+XP_033759073.1      -HISCTQRHVPRDISVCTCLQ---
+XP_033755724.1      ------------------------
+XP_033755725.1      ------------------------
+XP_033755816.1      ------------------------
+XP_033755849.1      ------------------------
+XP_033739279.1      ------------------------
+XP_033756230.1      ------------------------
+XP_033733521.1      ------------------------
+XP_033760700.1      QDPNTRPDHQTRPPDSC-------
+XP_033760713.1      RTQYCTTTHPR--TQYCTTTHPRT
+                                            

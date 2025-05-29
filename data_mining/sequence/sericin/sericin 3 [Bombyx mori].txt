@@ -1,0 +1,67 @@
+sericin 3 [Bombyx mori]
+GenBank: BAF81029.1
+
+Identical Proteins FASTA Graphics
+Go to:
+LOCUS       BAF81029                1271 aa            linear   INV 02-NOV-2007
+DEFINITION  sericin 3 [Bombyx mori].
+ACCESSION   BAF81029
+VERSION     BAF81029.1
+DBSOURCE    accession AB299446.1
+KEYWORDS    .
+SOURCE      Bombyx mori (domestic silkworm)
+  ORGANISM  Bombyx mori
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Endopterygota; Lepidoptera; Glossata;
+            Ditrysia; Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+REFERENCE   1
+  AUTHORS   Takasu,Y., Yamada,H., Tamura,T., Sezutsu,H., Mita,K. and
+            Tsubouchi,K.
+  TITLE     Identification and characterization of a novel sericin gene
+            expressed in the anterior middle silk gland of the silkworm Bombyx
+            mori
+  JOURNAL   Insect Biochem. Mol. Biol. 37 (11), 1234-1240 (2007)
+   PUBMED   17916509
+REFERENCE   2  (residues 1 to 1271)
+  AUTHORS   Takasu,Y., Yamada,H., Tamura,T., Sezutsu,H., Mita,K. and
+            Tsubouchi,K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-MAR-2007) Yoko Takasu, National Institute of
+            Agrobiological Sciences; Owashi, 1-2, Tsukuba, Ibaraki 305-8634,
+            Japan (E-mail:takasu@affrc.go.jp, Tel:81-29-838-6162,
+            Fax:81-29-838-6165)
+FEATURES             Location/Qualifiers
+     source          1..1271
+                     /organism="Bombyx mori"
+                     /strain="p50"
+                     /db_xref="taxon:7091"
+     Protein         1..1271
+                     /product="sericin 3"
+     CDS             1..1271
+                     /gene="Ser3"
+                     /coded_by="join(AB299446.1:2031..2063,
+                     AB299446.1:3374..3404,AB299446.1:4521..8272)"
+ORIGIN      
+        1 mnckvalfli vaivavqalp cqesrprrcg yrygcgggrg rgsgvrrlds gaddnqgrsc
+       61 lvggsaesnd edsddrlsvi nnteghatss sfdeqsssar qssssyqsqs ynkdssstne
+      121 ssdggsgsgr tgsagengen sddssgatkg nssksssssq gqsasssssd ekssqsssns
+      181 snnsksssqs sssqnssgsk gsgseessng gsgsgrtgsa ggtdedsdds sgatkgnssk
+      241 sssssqgqsa sssssdenss qsssnssnns ksssqsssgq nssgskgsgs eessnggsgs
+      301 grngsvggtd edsddssgat kgnsskssss sqgqsassss sdekssqsss nssnnsksss
+      361 qsssgqnssg skgsgseess nggsgsgrng saggtdedsd dssgatkgns sksssssqgq
+      421 sasssssdek ssqsssnssn nsksssqsss gqnssgskgs gseessnggs gsgrngsagg
+      481 tdedsddssg atkgnsskss sssqgqsass sssdekssqs ssnssnnsks ssqsssgqns
+      541 sgskgsgsee ssnggsgsgr tgsagetded sddssgatkg nssksssssq gksasssssd
+      601 ekssqsssns snnsksssqs sssnnssgsk gsgseessng gsgsgrtgsa ggsdedsdds
+      661 sgatkgnssk sssssqgqsa sssssdekss qsnsnssnns ksssqssssn nssgskgsgs
+      721 eessnggsgs grtgsaggtd edsddssgat kgnsskssss sqgksassss sdekssqsss
+      781 nssnnsksss qssssknssg skgsgseess nggsgsgrtg saggtdedsd dssgatkgns
+      841 sksssssqgk sasssssdek ssqsnsnssn nsksssqsss sknssgskgs gseessnggs
+      901 gsgrtgsagg tdedsddssg atkgnsskss sssqgksass sssnekssqs ssnssnnsks
+      961 ssqsssskns sgskgsgsse sgdkksssrg ssgdnsdddq tdsarsnskr stssdastkk
+     1021 sssrkssnhr ssrsqqahss sskqaqssss qqaqnsrsqq ahssrsqqah sssskqaqss
+     1081 sskqaqssss kqaqsssskq aqssssqqaq ssrsqqahss rsqqahssss kqaqsssskq
+     1141 aqsssskqaq sssskqaqss ssqqaqssrs qqahssrset dskssnsggh snhssrteqk
+     1201 ssakaissse qsqnfssssq ksaeaadgse stqsaseyss sqskasssfs assasesssl
+     1261 ssdvnfeekt d
+//

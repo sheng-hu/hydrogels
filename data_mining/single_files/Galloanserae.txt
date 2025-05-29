@@ -1,0 +1,1 @@
+[('nucleophilic', 732), ('hydrophobic', 698), ('acidic', 470), ('basic', 398), ('aromatic', 300), ('amide', 270)]

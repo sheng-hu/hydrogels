@@ -1,0 +1,22 @@
+,Total
+hydrophobic - basic,0.1152463777637259
+nucleophilic - hydrophobic,0.11264586806382472
+hydrophobic - hydrophobic,0.09510474579333339
+hydrophobic - acidic,0.07828629148155143
+hydrophobic - amide,0.07747876478526633
+nucleophilic - basic,0.04892790565898285
+amide - basic,0.04619600178477087
+hydrophobic - aromatic,0.04528992945775267
+aromatic - basic,0.04376794693865261
+nucleophilic - amide,0.04360096684213264
+nucleophilic - acidic,0.04156435714031529
+acidic - basic,0.04086085083202624
+basic - basic,0.036210044537150335
+nucleophilic - aromatic,0.03497001201709219
+nucleophilic - nucleophilic,0.03397086881660384
+acidic - amide,0.021387139247713606
+acidic - acidic,0.021050441676042187
+aromatic - amide,0.019892530514928293
+aromatic - acidic,0.01908500381864319
+amide - amide,0.016900575670726198
+aromatic - aromatic,0.007563377158765224

@@ -1,0 +1,151 @@
+sericin 1 precursor [Bombyx mori]
+NCBI Reference Sequence: NP_001037506.2
+
+Identical Proteins FASTA Graphics
+Go to:
+LOCUS       NP_001037506            1217 aa            linear   INV 13-DEC-2020
+DEFINITION  sericin 1 precursor [Bombyx mori].
+ACCESSION   NP_001037506 NP_001037507 XP_004922239
+VERSION     NP_001037506.2
+DBSOURCE    REFSEQ: accession NM_001044041.2
+KEYWORDS    RefSeq.
+SOURCE      Bombyx mori (domestic silkworm)
+  ORGANISM  Bombyx mori
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Endopterygota; Lepidoptera; Glossata;
+            Ditrysia; Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+REFERENCE   1  (residues 1 to 1217)
+  AUTHORS   Cheng T, Zhang X, Peng Z, Fan Y, Zhang L and Liu C.
+  TITLE     Effects of Osiris9a on Silk Properties in Bombyx mori Determined by
+            Transgenic Overexpression
+  JOURNAL   Int J Mol Sci 21 (5), E1888 (2020)
+   PUBMED   32164252
+  REMARK    GeneRIF: Effects of Osiris9a on Silk Properties in Bombyx mori
+            Determined by Transgenic Overexpression.
+            Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1217)
+  AUTHORS   Liu R, Qu D, Ma J, Luo Q, Ou Y, Tan T, Zeng W and Xu H.
+  TITLE     Insights into regulatory characteristics of the promoters of
+            Sericin 1 and Sericin 3 in transgenic silkworms
+  JOURNAL   Biochem Biophys Res Commun 522 (2), 492-498 (2020)
+   PUBMED   31780262
+  REMARK    GeneRIF: Insights into regulatory characteristics of the promoters
+            of Sericin 1 and Sericin 3 in transgenic silkworms.
+REFERENCE   3  (residues 1 to 1217)
+  AUTHORS   Qian P, Wang X, Li J, Jiang T, Tang X, Huixiang G and Shen X.
+  TITLE     Bmo-miR-2780a regulates the expression of the sericin-1 gene of
+            Bombyx mori
+  JOURNAL   Arch Insect Biochem Physiol 103 (2), e21627 (2020)
+   PUBMED   31701579
+  REMARK    GeneRIF: The target gene (Ser-1) was significantly decreased by
+            miR-2780a compared with the control group (p < .05), thus
+            indicating that bmo-miR-2780a might negatively regulate the
+            expression of Ser-1.
+REFERENCE   4  (residues 1 to 1217)
+  AUTHORS   Huang K, Li CF, Wu J, Wei JH, Zou Y, Han MJ and Zhou ZY.
+  TITLE     Enhancer activity of Helitron in sericin-1 gene promoter from
+            Bombyx mori
+  JOURNAL   Insect Sci 23 (3), 396-405 (2016)
+   PUBMED   27067405
+  REMARK    GeneRIF: Bmhel-8 in the sericin-1 promoter exhibits enhancer
+            activity. Bmhel-8 displays enhancer activity in a sericin-1
+            promoter-driven gene expression system but does not regulate the
+            tissue-specific expression of sericin-1.
+REFERENCE   5  (residues 1 to 1217)
+  AUTHORS   Tsubota T, Tomita S, Uchino K, Kimoto M, Takiya S, Kajiwara H,
+            Yamazaki T and Sezutsu H.
+  TITLE     A Hox Gene, Antennapedia, Regulates Expression of Multiple Major
+            Silk Protein Genes in the Silkworm Bombyx mori
+  JOURNAL   J Biol Chem 291 (13), 7087-7096 (2016)
+   PUBMED   26814126
+  REMARK    GeneRIF: Antennapedia regulates expression of sericin-1, a major
+            silk protein gene, in the silk gland.
+REFERENCE   6  (residues 1 to 1217)
+  AUTHORS   Takahashi M, Tsujimoto K, Yamada H, Takagi H and Nakamori S.
+  TITLE     The silk protein, sericin, protects against cell death caused by
+            acute serum deprivation in insect cell culture
+  JOURNAL   Biotechnol Lett 25 (21), 1805-1809 (2003)
+   PUBMED   14677702
+REFERENCE   7  (residues 1 to 1217)
+  AUTHORS   Zhang YQ.
+  TITLE     Applications of natural silk protein sericin in biomaterials
+  JOURNAL   Biotechnol Adv 20 (2), 91-100 (2002)
+   PUBMED   14538058
+REFERENCE   8  (residues 1 to 1217)
+  AUTHORS   Garel A, Deleage G and Prudhomme JC.
+  TITLE     Structure and organization of the Bombyx mori sericin 1 gene and of
+            the sericins 1 deduced from the sequence of the Ser 1B cDNA
+  JOURNAL   Insect Biochem Mol Biol 27 (5), 469-477 (1997)
+   PUBMED   9219370
+REFERENCE   9  (residues 1 to 1217)
+  AUTHORS   Michaille,J.J., Couble,P., Prudhomme,J.C. and Garel,A.
+  TITLE     A single gene produces multiple sericin messenger RNAs in the silk
+            gland of Bombyx mori
+  JOURNAL   Biochimie 68 (10-11), 1165-1173 (1986)
+   PUBMED   3024742
+REFERENCE   10 (residues 1 to 1217)
+  AUTHORS   Okamoto,H., Ishikawa,E. and Suzuki,Y.
+  TITLE     Structural analysis of sericin genes. Homologies with fibroin gene
+            in the 5' flanking nucleotide sequences
+  JOURNAL   J Biol Chem 257 (24), 15192-15199 (1982)
+   PUBMED   6294094
+COMMENT     VALIDATED REFSEQ: This record has undergone validation or
+            preliminary review. The reference sequence was derived from
+            BABH01021197.1, BABH01021198.1, BABH01021199.1 and BABH01021201.1.
+            On or before Feb 22, 2019 this sequence version replaced
+            XP_004922239.1, NP_001037506.1.
+            
+            Sequence Note: The genomic coordinates were based on alignments.
+            
+            Publication Note:  This RefSeq record includes a subset of the
+            publications that are available for this gene. Please see the Gene
+            record to access additional publications.
+            
+            ##Evidence-Data-START##
+            Transcript exon combination :: Z48802.1 [ECO:0000332]
+            RNAseq introns              :: single sample supports all introns
+                                           SAMN08295155, SAMN08295159
+                                           [ECO:0000348]
+            ##Evidence-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1217
+                     /organism="Bombyx mori"
+                     /db_xref="taxon:7091"
+                     /chromosome="11"
+                     /map="11"
+     Protein         1..1217
+                     /product="sericin 1 precursor"
+                     /note="sericin 1A; sericin 1A'; sericin 1B; silk gum
+                     protein"
+                     /calculated_mol_wt=121000
+     sig_peptide     1..21
+                     /inference="COORDINATES: ab initio prediction:SignalP:4.0"
+                     /calculated_mol_wt=2228
+     CDS             1..1217
+                     /gene="LOC101740082"
+                     /gene_synonym="ser1; sericin1B"
+                     /coded_by="NM_001044041.2:55..3708"
+                     /db_xref="GeneID:101740082"
+ORIGIN      
+        1 mrfvlcctli alaalsvkaf ghhpgnrdtv evknrkynaa ssessylnkd ndsisagahr
+       61 aksveqsqdk skytsgpegv sysgrsqnyk dskqayadyh sdpnggsasa gqsrdsslre
+      121 rnvhyvsdge avaassdard enrsaqqnaq anwnadgsyg vsadrsgsas srrrqanyys
+      181 dkditaaskd dsradssrrs nayynrdsdg sesaglsdrr assskndnvf vyrtkdsigg
+      241 qakssrsshs qesdayynss pdgsynagtr dssisnkkka sstiyadkdq iraandryss
+      301 kqlkqssaqi ssgpegtsvs skdrqysndk rsksdayvgr dgtvaysnkd sektsrqsnt
+      361 nyadqnsvrs dsaasdqtsn sydkgysdkn tvahssgsrg sqnqksssyr adkdgfssst
+      421 nteksrfsss nsvvetsdgt sasressaed tkssnsnvqs detgeeeelf dvvsyqkied
+      481 gkpviimkvi pveksasqss ssrssqesas yssssssstl sedssevdid lgnlgwwwns
+      541 dnkaqraagg atkseassst qattvsgadd sadsytwwwn prrsssssss asssssgsnv
+      601 ggssqssgss tsgsnarghl gtvsstgsts ntdsssksag srtsggssty gyssshrggs
+      661 vsstgsssnt dsstknagss tsggsstygy ssshrggsvs stgsssntds stknagssts
+      721 ggsstygyss shrggsvsst gsssntdsst ksagsstsgg sstygyssrh rggrvsstgs
+      781 ssttdassns vgsstsggss tygyssnsrd gsvsstgsss ntdsnsnsag sstsggssty
+      841 gyssnsrdgs vsstgsssnt dsnsnsagss tsggsstygy ssnsrdgsvs stgsssntda
+      901 stdltgssts ggsstygyss dsrdgsvsst gsssntdast dlagsstsgg sstygyssdc
+      961 gdgsvsstgs ssntdastdl agsstsggss tygyssnsrd gsvsstgsss ntdastdltg
+     1021 sstsggssty gysssnrdgs vlatgsssnt dastteestt sagsstegys ssshdgsvts
+     1081 tdgsstsgga ssssastaks daassedgfw wwnrrksgsg hksatvqsst tdktstdsas
+     1141 stdstsstsg astttsgsss tsggsstsda sstsssvsrs hrsgvnrllh kpgqgkiclc
+     1201 fenifdipyh lrknigv
+//

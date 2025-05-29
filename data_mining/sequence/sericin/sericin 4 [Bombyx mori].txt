@@ -1,0 +1,79 @@
+sericin 4 [Bombyx mori]
+GenBank: UTH80338.1
+
+Identical Proteins FASTA Graphics
+Go to:
+LOCUS       UTH80338                2270 aa            linear   INV 16-JUL-2022
+DEFINITION  sericin 4 [Bombyx mori].
+ACCESSION   UTH80338
+VERSION     UTH80338.1
+DBSOURCE    accession ON792595.1
+KEYWORDS    .
+SOURCE      Bombyx mori (domestic silkworm)
+  ORGANISM  Bombyx mori
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Endopterygota; Lepidoptera; Glossata;
+            Ditrysia; Bombycoidea; Bombycidae; Bombycinae; Bombyx.
+REFERENCE   1  (residues 1 to 2270)
+  AUTHORS   Dong,Z., Guo,K., Zhang,X., Zhang,T., Zhang,Y., Ma,S., Chang,H.,
+            Tang,M., An,L., Xia,Q. and Zhao,P.
+  TITLE     Identification of Bombyx mori sericin 4 protein as a new biological
+            adhesive
+  JOURNAL   Int J Biol Macromol 132, 1121-1130 (2019)
+   PUBMED   30928374
+REFERENCE   2  (residues 1 to 2270)
+  AUTHORS   Guo,K. and Dong,Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-JUN-2022) Biological Science Research Center,
+            Southwest University, Tiansheng Road, Chongqing, Chongqing 400716,
+            China
+FEATURES             Location/Qualifiers
+     source          1..2270
+                     /organism="Bombyx mori"
+                     /strain="Dazao"
+                     /db_xref="taxon:7091"
+                     /tissue_type="silk gland"
+     Protein         1..2270
+                     /product="sericin 4"
+                     /name="sericin in non-cocoon silk"
+     CDS             1..2270
+                     /coded_by="ON792595.1:43..6855"
+ORIGIN      
+        1 mdwtkylvlf ilmvvvssts tskknhhehs hsshkvekns kiekalltks hgpfssyglf
+       61 asafsdhkts hrilkeisel kaatnlneaf hgiyliakvv sdtieewipe lgtavarlfl
+      121 algrghaclp ggalkqlakd ldldickkdy gvewgweyye geyddvstyl tgcgldsdyf
+      181 skitsliens gnftegrpri iikavkelle ifkrdpssws lnefgiglaq liktaavlae
+      241 syrvglgtqi vdgfrqffyd vsqeygieit tqledikeai kstkcfnfgv lkscdsgyte
+      301 iddlndndkp aprqsgaetv ivytdadndd ddfsdldeei irlfssdeei dddksvipld
+      361 yarandeswy vndagyedtv lddngdaane ntdrsggfiv ndsqatdtit gggkrkgsad
+      421 ndddqrvvet fidevansdd psfnnkytwn yikaqkdkys dgdnsdgkfk elsdsdyked
+      481 hrsqktftkt vvsedsksda alksptvife nskqkskhsh ysnkekhylv sdatgqqdgv
+      541 ahetapsgst sklkeddttt eassdektgt tnerdsksts tkdvysgsgl etflswflpk
+      601 tkkdneifkt thtavtktdn vdaaktktvs vseqneqfqh knhrsgtsse kdiddgkdsv
+      661 iqqdetiivd sqqkkdntat tgmksdeydd dpneqsknvv vtkenkptst evtkhkhshh
+      721 khkhdtvies kpvqevekhs etketrkehs eestvtketk ptpteitkhk hshhkhkhdi
+      781 vieskpiqei ekhsettett keqseestvt ketkptptei tkhkhshhkh dtvieskpvq
+      841 evekhsetke trkehseest vtketkptpt eitkhkhshh khkhdivies kpiqeiekhs
+      901 ettettkeqs eestvtketk ptpteitkhk hshhkqkhdi vieskpiqei ekhsettett
+      961 kkqseertvt ketkptptev tkhkhshhkh khdivieskp iqeiekhset tetakeqsee
+     1021 stvtketkpt ptevtkhkhs hhkhkhdtai eskpdqeidk hsetteatke hfegniitke
+     1081 tkptptevtk hthshhkhkq dtvieskpiq eiekhsette ttkehsegst vtketkltpt
+     1141 evtkhkhshy khkhdtvies kpvqeveqhs etteitkehs egstvtketk ptptevkknk
+     1201 hshhkhdtvi eskpvqevek hsettetrke hsegstvtke tkptpteitk hkhshhknkh
+     1261 divieskpiq eiekhsette ttkehsegst vtketkptpt evtkhkhshh khkhdtaies
+     1321 kpdqeidkhs ettettkyhn edtvvtkdkt gnkqtstevi khkhendeks vteklisyvt
+     1381 hrsvdnsnkg nrkviisenp iiinapsrrn kytnyekvdf tkikqfspla pfgvfargit
+     1441 skceesaalf sslsrkrspr sfreavdtvv atvraisliv dgwiptlgtr fadmvmvilk
+     1501 tqtcvplkqe fpelayvcda sfgsawgwts fptcesrsql vrdlglvgik htietmlsqh
+     1561 gkgkaphqli gspaviaqsi hqisifyeqd peewnlehla atfartttil galgnsyksg
+     1621 lgqfmaegfl nyfkyvgnyy qidlsiyvsk iykdltfcka nalegvildg ttdyieehpn
+     1681 ikyviirhvh dqvrranrnr rngskvyeks gsktgirkvi ivrkgdpsgn naagyayaea
+     1741 gprnavyntn tdnsgsvaya aaqsqvnsqq qglnngggtv yleeaksqgg qgnsgsvaya
+     1801 taqsqassqq qglgngdgiv ylekaksqgg qgnsgsvaya taqsqassqq qglgngdgiv
+     1861 ylektksqgg qgnsgsvaya taqsqassqq qglgngdgiv ylekaksqgg qgnsgsvaya
+     1921 taqsqassqq qglgngdgiv ylekaksqgg qgnsgsvaya taqsqasrqq qglnneggkv
+     1981 ylkeaksqgg hgnsgsvayv gtqsqangqq qglyngrgtv yleeaksqge qgiagslaya
+     2041 aaqsqangqq qslnngggtv nlekrhfqgg ygnanrftya pagpqligqq rnhinelgsa
+     2101 yleagrsqvq nanagsvayg algsqantqn qyngdnrlnn rhvnnigedk lraigeqyhr
+     2161 gyssdrnavn tqiegsllnh sghvpspndf riqnpgqlan nvgtnqnniy gnkqfgygpq
+     2221 qgsgyqqkny rninengqdk ihggenteag ghspglvggl fkyllggktq

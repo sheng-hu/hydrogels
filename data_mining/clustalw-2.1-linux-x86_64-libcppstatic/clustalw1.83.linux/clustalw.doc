@@ -1,0 +1,757 @@
+README for Clustal W version 1.7  June 1997
+
+             Clustal W version 1.7 Documentation
+
+This file provides some notes on the latest changes, installation and usage
+of the Clustal W multiple sequence alignment program.
+
+
+
+Julie Thompson (Thompson@EMBL-Heidelberg.DE)
+Toby Gibson    (Gibson@EMBL-Heidelberg.DE)
+
+European Molecular Biology Laboratory
+Meyerhofstrasse 1
+D 69117 Heidelberg
+Germany
+
+
+Des Higgins (Higgins@ucc.ie)
+
+University of County Cork
+Cork
+Ireland
+
+
+Please e-mail bug reports/complaints/suggestions (polite if possible)
+to Toby Gibson or Des Higgins.  
+
+
+
+Thompson, J.D., Higgins, D.G. and Gibson, T.J. (1994)
+CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment
+through sequence weighting, positions-specific gap penalties and weight matrix
+choice.  Nucleic Acids Research, 22:4673-4680.
+
+--------------------------------------------------------------
+
+What's New (June 1997) in Version 1.7 (since version 1.6).
+
+
+1. The static arrays used by clustalw for storing the alignment data have been
+replaced by dynamically allocated memory. There is now no limit on the number
+or length of sequences which can be input.
+
+2. The alignment of DNA sequences now offers a new hard-coded matrix, as well
+as the identity matrix used previously. The new matrix is the default scoring
+matrix used by the BESTFIT program of the GCG package for the comparison of
+nucleic acid sequences. X's and N's are treated as matches to any IUB ambiguity
+symbol. All matches score 1.9; all mismatches for IUB symbols score 0.0.
+
+3. The transition weight option for aligning nucleotide sequences has been
+changed from an on/off toggle to a weight between 0 and 1.  A weight of zero
+means that the transitions are scored as mismatches; a weight of 1 gives 
+transitions the full match score. For distantly related DNA sequences, the
+weight should be near to zero; for closely related sequences it can be useful
+to assign a higher score.
+
+4. The RSF sequence alignment file format used by GCG Version 9 can now be
+read.
+
+5. The clustal sequence alignment file format has been changed to allow
+sequence names longer than 10 characters. The maximum length allowed is set in
+clustalw.h by the statement:
+#define MAXNAMES	10
+
+For the fasta format, the name is taken as the first string after the '>'
+character, stopping at the first white space. (Previously, the first 10
+characters were taken, replacing blanks by underscores).
+
+6. The bootstrap values written in the phylip tree file format can be assigned
+either to branches or nodes. The default is to write the values on the nodes,
+as this can be read by several commonly-used tree display programs. But note
+that this can lead to confusion if the tree is rooted and the bootstraps may
+be better attached to the internal branches: Software developers should ensure
+they can read the branch label format.
+
+7. The sequence weighting used during sequence to profile alignments has been
+changed. The tree weight is now multiplied by the percent identity of the
+new sequence compared with the most closely related sequence in the profile.
+
+8. The sequence weighting used during profile to profile alignments has been
+changed. A guide tree is now built for each profile separately and the
+sequence weights calculated from the two trees. The weights for each
+sequence are then multiplied by the percent identity of the sequence compared
+with the most closely related sequence in the opposite profile.
+
+9. The adjustment of the Gap Opening and Gap Extension Penalties for sequences
+of unequal length has been improved.
+
+10. The default order of the sequences in the output alignment file has been
+changed. Previously the default was to output the sequences in the same order
+as the input file. Now the default is to use the order in which the sequences
+were aligned (from the guide tree/dendrogram), thus automatically grouping
+closely related sequences.
+
+11. The option to 'Reset Gaps between alignments' has been switched off by
+default.
+
+12. The conservation line output in the clustal format alignment file has been
+changed. Three characters are now used:
+'*' indicates positions which have a single, fully conserved residue
+':' indicates that one of the following 'strong' groups is fully conserved:-
+                 STA
+                 NEQK
+                 NHQK
+                 NDEQ
+                 QHRK
+                 MILV
+                 MILF
+                 HY
+                 FYW
+
+'.' indicates that one of the following 'weaker' groups is fully conserved:-
+                 CSA
+                 ATV
+                 SAG
+                 STNK
+                 STPA
+                 SGND
+                 SNDEQK
+                 NDEQHK
+                 NEQHRK
+                 FVLIM
+                 HFY
+
+These are all the positively scoring groups that occur in the Gonnet Pam250
+matrix. The strong and weak groups are defined as strong score >0.5 and weak
+score =<0.5 respectively.
+
+13. A bug in the modification of the Myers and Miller alignment algorithm
+for residue-specific gap penalites has been fixed. This occasionally caused
+new gaps to be opened a few residues away from the optimal position.
+
+14. The GCG/MSF input format no longer needs the word PILEUP on the first
+line. Several versions can now be recognised:-
+      1.  The word PILEUP as the first word in the file
+      2.  The word !!AA_MULTIPLE_ALIGNMENT or !!NA_MULTIPLE_ALIGNMENT
+          as the first word in the file
+      3.  The characters MSF on the first line in the line, and the
+          characters .. at the end of the line.
+
+15. The standard command line separator for UNIX systems has been changed from
+'/' to '-'. ie. to give options on the command line, you now type
+
+     clustalw input.aln -gapopen=8.0
+
+instead of  clustalw input.aln /gapopen=8.0
+
+
+                      ATTENTION SOFTWARE DEVELOPERS!!
+                      -------------------------------
+
+The CLUSTAL sequence alignment output format has been modified:
+
+1. Names longer than 10 chars are now allowed. (The maximum is specified in
+clustalw.h by '#define MAXNAMES'.)
+
+2. The consensus line now consists of three characters: '*',':' and '.'. (Only
+the '*' and '.' were previously used.)
+
+3. An option (not the default) has been added, allowing the user to print out
+sequence numbers at the end of each line of the alignment output.
+
+4. Both RNA bases (U) and base ambiguities are now supported in nucleic acid
+sequences. In the past, all characters (upper or lower case) other than
+a,c,g,t or u were converted to N. Now the following characters are recognised 
+and retained in the alignment output: ABCDGHKMNRSTUVWXY (upper or lower case).
+
+5. A  Blank line inadvertently added in the version 1.6 header has been taken
+out again.
+
+
+--------------------------------------------------------------
+
+What's New (March 1996) in Version 1.6 (since version 1.5).
+
+
+1) Improved handling of sequences of unequal length.  Previously, we
+increased the gap extension penalties for both sequences if the two sequences
+(or groups of previously aligned sequences) were of different lengths.  
+Now, we increase the gap opening and extension penalties for the shorter 
+sequence only.   This helps prevent short sequences being stretched out
+along longer ones.
+
+2) Added the "Gonnet" series of weight matrices (from Gaston Gonnet and 
+co-workers at the ETH in Zurich).  Fixed a bug in the matrix
+choice menu; now PAM matrices can be selected ok.
+
+3) Added secondary structure/gap penalty masks.  These allow you to 
+include, in an alignment, a position specific set of gap penalties.  
+You can either set a gap opening penalty at each position or specify
+the secondary strcuture (if protein; alpha helix, beta strand or loop)
+and have gap penalties set automatically.   This, basically, is used to make 
+gaps harder to open inside helices or strands.  
+
+These masks are only used in the "profile alignment" menu.  They may be read in
+as part of an alignment in a special format (see the on-line help for
+details) or associated with each sequence, if the sequences are in Swiss Prot 
+format and secondary structure information is given.   All of the mask 
+parameters can be set from the profile alignment menu.  Basically, the
+mask is made up of a series of numbers between 1 and 9, one per position.
+The gap opening penalty at a position is calculated as the starting penalty
+multipleied by the mask value at that site. 
+
+4) Added command line options /profile and /sequences.
+These allow uses to choose between normal profile alignment where the
+two profiles (pre-existing alignments specified in the files
+/profile1= and /profile2=) are merged/aligned with each other (/profile)
+and the case where the individual sequences in /profile2 are aligned
+sequentially with the alignment in /profile1 (/sequences).
+
+5) Fixed bug in modified Myers and Miller algorithm - gap penalty score
+was not always calculated properly for type 2 midpoints.  This is the core
+alignment algorithm.
+
+6) Only allows one output file format to be selected from command line
+- ie. multiple output alignment files are not allowed.
+
+7) Fixed 'bad calls to ckfree' error during calculation of phylip distance
+matrix.
+
+8) Fixed command line options /gapopen /gapext /type=protein /negative.
+
+9) Allowed user to change command line separator on UNIX from '/' to '-'.
+This allows unix users to use the more conventinal '-' symbol
+for seperating command line options.  "/" can then be used in unix
+file names on the command line.   The symbol that is used,
+is specified in the file clustalw.h which must be edited if you 
+wish to change it (and the program must then be recompiled).   Find the 
+block of code in clustalw.h that corrsponds to the operating system you
+are using.  These blocks are started by one of the following:
+
+#ifdef VMS 
+#elif MAC
+#elif MSDOS
+#elif UNIX
+
+On the next line after each is the line:
+
+#define COMMANDSEP '/'
+
+Change this in the appropriate block of code (e.g. the UNIX block) to 
+
+#define COMMANDSEP '-'
+
+if you wish to use the "-" character as command seperator.
+  
+
+       
+--------------------------------------------------------------
+
+What's New (April 1995) in Version 1.5 (since version 1.3).
+
+1) ported to MAC and PC.  These versions are quite slow unless you
+have a nice beefy machine.  On a Power Mac or a Pentium box
+it is nice and fast.  Two precompiled versions are supplied for Macs
+(Power mac and old mac versions).
+Mac:       1500 residues by 100 sequences
+Power Mac  3000    "     "   "     "
+PC         1500    "     "   "     "
+
+2) alignment of new sequences to an alignment.  Fixed a serious bug
+which assigned weights to the wrong sequences.  Now also, weights 
+sequences according to distance from the incoming sequence.  The
+new weights are: tree weights * similarity to incoming sequence.
+The tree weights are the old weights that we derive from the tree
+connecting all the sequences in the existing alignment.
+
+3) for all platforms, output linelength = 60.
+
+4) Bootstrap files (*.phb): the "final" node (arbitrary trichotomy
+at the end of the neighbor-joining process) is labelled as 
+TRICHOTOMY in the bootstrap output files.  This is to help
+link bootstrap figures with nodes when you reroot the tree.
+
+5) Command line /bootstrap option now more robust.
+
+--------------------------------------------------------------
+INTRODUCTION
+
+
+
+This document gives some BRIEF notes about usage of the Clustal W
+multiple alignment program for UNIX and VMS machines.  Clustal W
+is a major update and rewrite of the Clustal V program which 
+was described in:
+
+Higgins, D.G., Bleasby, A.J. and Fuchs, R. (1992)
+CLUSTAL V: improved software for multiple sequence alignment.
+Computer Applications in the Biosciences (CABIOS), 8(2):189-191.
+
+The main new features are a greatly improved (more sensitive)
+multiple alignment procedure for proteins and improved support
+for different file formats.  This software was described in:
+
+Thompson, J.D., Higgins, D.G. and Gibson, T.J. (1994)
+CLUSTAL W: improving the sensitivity of progressive multiple
+sequence alignment through sequence weighting, position specific
+gap penalties and weight matrix choice.
+Nucleic Acids Research, 22(22):4673-4680.
+
+
+The usage of Clustal W is largely the same as for
+Clustal V details of which are described in clustalv.doc.  Details of the
+new alignment algorithms are described in the manuscript by
+Thompson et. al. above, an ascii/text version of which is included 
+(clustalw.ms). This file lists some of the details not covered by either 
+of the above documents.
+
+
+There are brief notes on the following topics:
+
+1) Installation for VMS and UNIX and MAC and PC
+2) File input
+3) file output
+4) changes to the alignment algorithms
+5) minor modifications to the phylogenetic tree and bootstrapping methods
+6) summary of the command line usage.
+
+-------------------------------------------------------------------
+
+1) INSTALLATION    (for Unix, VAX/VMS, PC and MAC)
+
+
+
+*****IMPORTANT*****
+If you wish to recompile the program (or compile it for the first
+time; you will have to do this with UNIX):
+first check the file CLUSTALW.H which needs to be changed if you
+move the code from between unix and vms machines.  At the top
+of the file are four lines which define one of VMS, MSDOS, MAC or
+UNIX to be 1.  All of these EXCEPT one must be commented out
+using enclosed /* ... */.  
+*******************
+
+
+Unix
+-----
+
+Make files are supplied for unix machines.  The code was compiled and
+tested using Decstation (Ultrix), SUN (Gnu C compiler/gcc), Silicon
+Graphics (IRIX) and DEC/Alpha (OSF1).  We have not tested the code on any other
+systems.  Just use makefile to make on most systems.  For Sun, you need to
+have the Gnuc C (gcc) compiler installed ... use the file makefile.sun in this
+case.  You make the program with:
+make  (or make -f makefile.sun)
+
+This produces the file clustalw which can be run by typing clustalw and
+pressing return.  The help file is called clustalw_help
+
+
+VMS
+----
+
+There is a small DCL command file (VMSLINK.COM) to compile and link the
+code for VMS machines (vax or alpha).  This procedure just compiles the
+source files and links using default settings.  Run it using:
+$ @vmslink
+This produces Clustalw.exe which can be run using the run command:
+$ run clustalw
+
+The intermediate object files can be deleted with:
+$ del *.obj;
+
+There is an extensive command line facility.  To use this, you must
+create a symbol to run the program (and put this in your login.com file).
+e.g.
+$ clustalw :== $$drive:[dir.dir]clustalw
+where $drive is the drive on which the executable file is stored (clustalw.exe)
+and [dir.dir] is the full directory specification.  NOTE THE EXTRA DOLLAR SIGN.
+Then the program can be run using the command:
+$ clustalw
+
+
+PC
+__
+
+We supply an executable file (Clustalw.exe) which will run using MSDOS.
+It will also run under windows (as a DOS application) 
+*** IF you have a maths coprocessor***.  If you do not have a maths chip 
+(e.g. 80387), the program can only be run under MSDOS.  In the latter case, 
+you must have the file EMU387.exe in the same directory as CLUSTALW.EXE.  
+This file emulates a maths chip if you do not have one.  
+
+
+We generated the executable file using gnu c for MSDOS. 
+It will also compile (with about 10,000 warning messages)
+using Microsoft C but we have not tested it and there appear to be problems
+with the executable. 
+
+You will need to use a "memory extender" to allow the program to get at more 
+than 640kb of memory.
+
+
+
+MAC
+---
+
+The code compiles for Power Mac and older macs using Metroworks Codewarrior
+C compiler.  We supply 2 executable programs (one each for PowerMac and
+older mac): ClustalwPPC and Clustalw68k).  These need up to
+10mb of memory to run which needs to be adjusted with the Get Info (%I)
+command from the Finder if you have problems.  Just double click the 
+executable file name or icon and off you go (we hope).
+
+As a special treat for Mac users, we supply an executable and brief readme
+file for NJPLOT.   This is a really nice program by Manolo Gouy
+(University of Lyon, France) that allows you to import the trees
+made by Clustal W and display them/manipulate them.  It will properly
+display the bootstrap figures from the *.phb files.  It can export the
+trees in PICT format which can then be used by MacDraw for example.
+
+
+-------------------------------------------------------------------------
+
+2) FILE INPUT (sequences to be aligned)
+
+
+
+The sequences must all be in one file (or two files for a "profile alignment")
+in ONE of the following formats:
+
+FASTA (Pearson), NBRF/PIR, EMBL/Swiss Prot, GDE, CLUSTAL, GCG/MSF, GCG9/RSF.
+
+The program tries to "guess" which format is being used and whether
+the sequences are nucleic acid (DNA/RNA) or amino acid (proteins).  The
+format is recognised by the first characters in the file.  This is kind
+of stupid/crude but works most of the time and it is difficult
+to do reliably, any other way.
+
+
+Format           First non blank word or character in the file.
+...............................................................
+FASTA            >
+NBRF             >P1;  or >D1;
+EMBL/SWISS       ID
+GDE protein      % 
+GDE nucleotide   # 
+CLUSTAL          CLUSTAL (blocked multiple alignments)
+GCG/MSF          PILEUP  or !!AA_MULTIPLE_ALIGNMENT or !!NA_MULTIPLE_ALIGNMENT
+                 or MSF on the first line, and '..' at the end of line
+GCG9/RSF         !!RICH_SEQUENCE
+
+Note, that the only way of spotting that a file is MSF format is if
+the word PILEUP appears at the very beginning of the file.  If you 
+produce this format from software other than the GCG pileup program,
+then you will have to insert the word PILEUP at the start of the file.
+Similarly, if you use clustal format, the word CLUSTAL must appear first.
+
+All of these formats can be used to read in AN EXISTING FULL ALIGNMENT.
+With CLUSTAL format, this is just the same as the output format of this
+program and Clustal V.  If you use PILEUP or CLUSTAL format, all sequences
+must be the same length, INCLUDING GAPS ("-" in clustal format; "." in MSF).
+With the other formats, sequences can be gapped with "-" characters.  If you
+read in any gaps these are kept during any later alignments.  You can use
+this facility to read in an alignment in order to calculate a phylogenetic
+tree OR to output the same alignment in a different format (from the
+output format options menu of the multiple alignment menu) e.g. read
+in a GCG/MSF format alignment and output a PHYLIP format alignment. This is 
+also useful to read in one reference alignment and to add one or more new 
+sequences to it using the "profile alignment" facilities.
+
+DNA vs. PROTEIN:  the program will count the number of A,C,G,T,U and N
+charcters.  If 85% or more of the characters in a sequence are as above,
+then DNA/RNA is assumed, protein otherwise.  
+
+-------------------------------------------------------------------------
+
+
+3) FILE OUTPUT 
+
+
+1) the alignments.
+
+In the multiple alignment and profile alignment menus, there is a menu
+item to control the output format(s).
+
+The alignment output format can be set to any (or all) of:
+CLUSTAL  (a self explanatory blocked alignment)
+NBRF/PIR (same as input format but with "-" characters for gaps)
+MSF      (the main GCG package multiple alignment format)
+PHYLIP   (Joe Felsenstein's phylogeny inference package.  Gaps are set to
+         "-" characters.  For some programs (e.g. PROTPARS/DNAPARS) these 
+         should be changed to "?" characters for unknown residues.
+GDE      (Used by Steven Smith's GDE package)
+
+You can also choose between having the sequences in the same order as in 
+the input file or writing them out in an order that more closely matches the 
+order used to carry out the multiple alignment.
+
+
+2) The trees.
+
+Believe it or not, we now use the New Hampshire (nested parentheses)
+format as default for our trees.  This format is compatible with e.g. the
+PHYLIP package.  If you want to view a tree, you can use the RETREE or 
+DRAWGRAM/DRAWTREE programs of PHYLIP.  This format is used for all our 
+trees, even the initial guide trees for deciding the order of multiple
+alignment.  The output trees from the phylogenetic tree menu can also be
+requested in our old verbose/cryptic format.  This may be more useful
+if, for example, you wish to see the bootstrap figures.  The bootstrap
+trees in the default New Hampshire format give the bootstrap figures
+as extra labels which can be viewed very easily using TREETOOL which is
+available as part of the GDE package.  TREETOOL is available from the
+RDP project by ftp from rdp.life.uiuc.edu.  
+
+The New Hampshire format is only useful if you have software to display or
+manipulate the trees.  The PHYLIP package is highly recommended if you intend
+to do much work with trees and includes programs for doing this.  If you do
+not have such software, request the trees in the older clustal format
+and see the documentation for Clustal V (clustalv.doc).  WE DO NOT PROVIDE
+ANY DIRECT MEANS FOR VIEWING TREES GRAPHICALLY.
+
+-------------------------------------------------------------------------
+
+4) THE ALIGNMENT ALGORITHMS
+
+
+The basic algorithm is the same as for Clustal V and is described in some
+detail in clustalv.doc.  The new modifications are described in detail in 
+clustalw.ms.  Here we just list some notes to help answer some of the most
+obvious questions.
+
+
+Terminal Gaps
+
+In the original Clustal V program, terminal gaps were penalised the same
+as all other gaps.  This caused some ugly side effects e.g.
+
+acgtacgtacgtacgt                              acgtacgtacgtacgt
+a----cgtacgtacgt  gets the same score as      ----acgtacgtacgt
+
+NOW, terminal gaps are free.  This is better on average and stops silly
+effects like single residues jumping to the edge of the alignment.  However,
+it is not perfect.  It does mean that if there should be a gap near the end 
+of the alignment, the program may be reluctant to insert it i.e. 
+
+cccccgggccccc                                              cccccgggccccc
+ccccc---ccccc  may be considered worse (lower score) than  cccccccccc---
+
+In the right hand case above, the terminal gap is free and may score higher
+than the laft hand alignment.  This can be prevented by lowering the gap
+opening and extension penalties.   It is difficult to get this right all the
+time.  Please watch the ends of your alignments. 
+
+
+
+Speed of the initial (pairwise) alignments (fast approximate/slow accurate)
+
+By default, the initial pairwise alignments are now carried out using a full
+dynamic programming algorithm.  This is more accurate than the older hash/
+k-tuple based alignments (Wilbur and Lipman) but is MUCH slower.  On a fast
+workstation you may not notice but on a slow box, the difference is extreme.
+You can set the alignment method from the menus easily to the older, faster
+method.
+
+
+
+Delaying alignment of distant sequences
+
+The user can set a cut off to delay the alignment of the most divergent
+sequences in a data set until all other sequences have been aligned.  By 
+default, this is set to 40% which means that if a sequence is less than 40%
+identical to any other sequence, its alignment will be delayed.  
+
+
+
+Iterative realignment/Reset gaps between alignments
+
+By default, if you align a set of sequences a second time (e.g. with changed
+gap penalties), the gaps from the first alignment are discarded.  You can
+set this from the menus so that older gaps will be kept between alignments,
+This can sometimes give better alignments by keeping the gaps (do not reset
+them) and doing the full multiple alignment a second time.  Sometimes, the
+alignment will converge on a better solution; sometimes the new alignment will
+be the same as the first.  There can be a strange side effect: you can get
+columns of nothing but gaps introduced.  
+
+Any gaps that are read in from the input file are always kept, regardless 
+of the setting of this switch.  If you read in a full multiple alignment, the "reset
+gaps" switch has no effect.  The old gaps will remain and if you carry out 
+a multiple alignment, any new gaps will be added in.  If you wish to carry out 
+a full new alignment of a set of sequences that are already aligned in a file
+you must input the sequences without gaps.
+
+
+
+Profile alignment
+
+By profile alignment, we simply mean the alignment of old alignments/sequences.
+In this context, a profile is just an existing alignment (or even a set of 
+unaligned sequences; see below).  This allows you to
+read in an old alignment (in any of the allowed input formats) and align
+one or more new sequences to it.  From the profile alignment menu, you
+are allowed to read in 2 profiles.  Either profile can be a full alignment
+OR a single sequence.  In the simplest mode, you simply align the two profiles
+to each other. This is useful if you want to gradually build up a full
+multiple alignment.  
+
+A second option is to align the sequences from the second profile, one at
+a time to the first profile.  This is done, taking the underlying tree between
+the sequences into account.  This is useful if you have a set of new sequences
+(not aligned) and you wish to add them all to an older alignment.
+
+----------------------------------------------------------------------------
+
+5) CHANGES TO THE PHYLOGENTIC TREE CALCULATIONS AND SOME HINTS.
+
+
+
+IMPROVED DISTANCE CALCULATIONS FOR PROTEIN TREES
+
+
+The phylogenetic trees in Clustal W (the real trees that you calculate
+AFTER alignment; not the guide trees used to decide the branching order
+for multiple alignment) use the Neighbor-Joining method of Saitou and
+Nei based on a matrix of "distances" between all sequences.  These distances
+can be corrected for "multiple hits".  This is normal practice when accurate
+trees are needed.  This correction stretches distances (especially large ones)
+to try to correct for the fact that OBSERVED distances (mean number of 
+differences per site) greatly underestimate the actual number that happened
+during evolution.  
+
+In Clustal V we used a simple formula to convert an observed distance to one
+that is corrected for multiple hits.  The observed distance is the mean number
+of differences per site in an alignment (ignoring sites with a gap) and is
+therefore always between 0.0 (for ientical sequences) an 1.0 (no residues the
+same at any site).  These distances can be multiplied by 100 to give percent
+difference values.  100 minus percent difference gives percent identity.
+The formula we use to correct for multiple hits is from Motoo Kimura
+(Kimura, M. The neutral Theory of Molecular Evolution, Camb.Univ.Press, 1983,
+page 75) and is:
+
+K = -Ln(1 - D - (D.D)/5)  where D is the observed distance and K is       
+                              corrected distance.
+
+This formula gives mean number of estimated substitutions per site and, in
+contrast to D (the observed number), can be greater than 1 i.e. more than
+one substitution per site, on average.  For example, if you observe 0.8
+differences per site (80% difference; 20% identity), then the above formula
+predicts that there have been 2.5 substitutions per site over the course 
+of evolution since the 2 sequences diverged.  This can also be expressed in 
+PAM units by multiplying by 100 (mean number of substitutions per 100 residues).
+The PAM scale of evolution and its derivation/calculation comes from the
+work of Margaret Dayhoff and co workers (the famous Dayhoff PAM series
+of weight matrices also came from this work).  Dayhoff et al constructed
+an elaborate model of protein evolution based on observed frequencies
+of substitution between very closely related proteins.  Using this model,
+they derived a table relating observed distances to predicted PAM distances.
+Kimura's formula, above, is just a "curve fitting" approximation to this table.
+It is very accurate in the range 0.75 > D > 0.0 but becomes increasingly
+unaccurate at high D (>0.75) and fails completely at around D = 0.85.
+
+To circumvent this problem, we calculated all the values for K corresponding
+to D above 0.75 directly using the Dayhoff model and store these in an 
+internal table, used by Clustal W.  This table is declared in the file dayhoff.h and
+gives values of K for all D between 0.75 and 0.93 in intervals of 0.001 i.e.
+for D = 0.750, 0.751, 0.752 ...... 0.929, 0.930.   For any observed D 
+higher than 0.930, we arbitrarily set K to 10.0.  This sounds drastic but
+with real sequences, distances of 0.93 (less than 7% identity) are rare.
+If your data set includes sequences with this degree of divergence, you
+will have great difficulty getting accurate trees by ANY method; the alignment
+itself will be very difficult (to construct and to evaluate).
+
+There are some important
+things to note.  Firstly, this formula works well if your sequences are
+of average amino acid composition and if the amino acids substitute according
+to the original Dayhoff model.  In other cases, it may be misleading.  Secondly,
+it is based only on observed percent distance i.e. it does not DIRECTLY
+take conservative substitutions into account.  Thirdly, the error on the
+estimated PAM distances may be VERY great for high distances; at very high
+distance (e.g. over 85%) it may give largely arbitrary corrected distances.
+In most cases, however, the correction is still worth using; the trees will
+be more accurate and the branch lengths will be more realistic.  
+
+A far more sophisticated distance correction based on a full Dayhoff
+model which DOES take conservative substitutions and actual amino acid
+composition into account, may be found in the PROTDIST program of the
+PHYLIP package.  For serious tree makers, this program is highly recommended. 
+
+
+
+TWO NOTES ON BOOTSTRAPPING...
+
+When you use the BOOTSTRAP in Clustal W to estimate the reliability of parts
+of a tree, many of the uncorrected distances may randomly exceed the arbitrary cut
+off of 0.93 (sequences only 7% identical) if the sequences are distantly
+related.  This will happen randomly i.e. even if none of the pairs of 
+sequences are less than 7% identical, the bootstrap samples may contain pairs
+of sequences that do exceed this cut off.
+If this happens, you will be warned.  In practice, this can
+happen with many data sets.  It is not a serious problem if it happens rarely.
+If it does happen (you are warned when it happens and told how often the
+problem occurs), you should consider removing the most distantly
+related sequences and/or using the PHYLIP package instead.
+
+
+A further problem arises in almost exactly the opposite situation: when
+you bootstrap a data set which contains 3 or more sequences that are identical
+or almost identical.  Here, the sets of identical sequences should be shown
+as a multifurcation (several sequences joing at the same part of the tree).
+Because the Neighbor-Joining method only gives strictly dichotomous trees
+(never more than 2 sequences join at one time), this cannot be exactly 
+represented.  In practice, this is NOT a problem as there will be some
+internal branches of zero length seperating the sequences.  If you
+display the tree with all branch lengths, you will still see a multifurcation.  
+However, when you bootstrap
+the tree, only the branching orders are stored and counted.  In the case
+of multifurcations, the exact branching order is arbitrary but the program
+will always get the same branching order, depending only on the input order
+of the sequences.  In practice, this is only a problem in situations where
+you have a set of sequences where all of them are VERY similar.  In this case,
+you can find very high support for some groupings which will disappear if you
+run the analysis with a different input order.  Again, the PHYLIP package
+deals with this by offering a JUMBLE option to shuffle the input order
+of your sequences between each bootstrap sample.  
+
+----------------------------------------------------------------------------
+
+6) SUMMARY OF THE COMMAND LINE USAGE
+
+Clustal W is designed to be run interactively.  However, there are many 
+situations where it is convenient to run it from the command line, especially
+if you wish to run it from another piece of software (e.g. SeqApp or GDE).
+All parameters can be set from the command line by giving options after the
+clustalw command. On UNIX options should be preceded by '-', all other systems
+use the '/' character.
+
+If anything is put on the command line, the program will (attempt to) carry
+out whatever is requested and will exit.  If you wish to use the command
+line to set some parameters and then go into interactive mode, use the
+command line switch: interactive .... e.g.
+
+clustalw -quicktree -interactive    on UNIX
+or
+clustalw /quicktree /interactive    on VMS,MAC and PC
+
+will set the default initial alignment mode to fast/approximate and will then
+go to the main menu.
+
+
+To see a list of all the command line parameters, type: 
+
+clustalw -options           on UNIX
+or
+clustalw /options           on VMS,MAC and PC
+
+and you will see a list with no explanation.
+
+
+To get (VERY BRIEF) help on command line usage, use the /HELP or /CHECK
+(-help or -check on UNIX systems) options.  Otherwise, the command line
+usage is self explanatory or is explained in clustalv.doc.  The defaults
+for all parameters are set in the file param.h which can be changed easily 
+(remember to recompile the program afterwards :-).
+
+------------------------------------------------------------------------------

@@ -1,0 +1,73 @@
+sericin 2 [Pseudoips prasinana]
+GenBank: QZP43460.1
+
+Identical Proteins FASTA Graphics
+Go to:
+LOCUS       QZP43460                1404 aa            linear   INV 05-SEP-2021
+DEFINITION  sericin 2 [Pseudoips prasinana].
+ACCESSION   QZP43460
+VERSION     QZP43460.1
+DBSOURCE    accession MW373766.1
+KEYWORDS    .
+SOURCE      Pseudoips prasinana
+  ORGANISM  Pseudoips prasinana
+            Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta;
+            Pterygota; Neoptera; Endopterygota; Lepidoptera; Glossata;
+            Ditrysia; Noctuoidea; Nolidae; Chloephorinae; Pseudoips.
+REFERENCE   1  (residues 1 to 1404)
+  AUTHORS   Rindos,M., Kucerova,L., Rouhova,L., Sehadova,H., Sery,M.,
+            Hradilova,M., Konik,P. and Zurovec,M.
+  TITLE     Comparison of Silks from Pseudoips prasinana and Bombyx mori Shows
+            Molecular Convergence in Fibroin Heavy Chains but Large Differences
+            in Other Silk Components
+  JOURNAL   Int J Mol Sci 22 (15), 8246 (2021)
+   PUBMED   34361011
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1404)
+  AUTHORS   Rindos,M., Kucerova,L., Rouhova,L., Sehadova,H., Sery,M.,
+            Hroudova,M., Maaroufi,H.O., Konik,P. and Zurovec,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-DEC-2020) Genetics, Biology Centre, CAS, Institute of
+            Entomology, Branisovska 31, Ceske Budejovice, Czech Republic 37005,
+            Czech Republic
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: Trinity v. 2.9.1.
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1404
+                     /organism="Pseudoips prasinana"
+                     /db_xref="taxon:2758353"
+                     /tissue_type="silk glands"
+     Protein         1..1404
+                     /product="sericin 2"
+                     /name="Sericin silk adhesive"
+     CDS             1..1404
+                     /coded_by="MW373766.1:39..4253"
+                     /note="Pp-Src2"
+ORIGIN      
+        1 mvsakilvls allsyaaslp hhglgigggg gsgfgigsgs gfgigggsgv glgsasgfgg
+       61 gssggssfgq ssatglsfgq ggstgvgfgs gasiaqgigf ggtqgvgsgg vvganiaqgv
+      121 aagvaaglgv iagsnggvlf gsgggygrgk grfnscavla qgirsggpaa acfnavasfg
+      181 eattlgefwh qylqlslgls ymldawvpgs gtffanmara aslnncvngn dqymvlssge
+      241 dlcnadygsn ygwpryggkl etaadissfy qfgtatqkfk alfkgdvnsl denkqflary
+      301 iyrisqlver nagktwsned fnsiycdsvg ifyligkgyh qklgnqilrd cenhskafsk
+      361 ygfnlasrte qikkeckssi fydfggvlrr gtdddynkyy kaddtyrdsk tdsssqsssq
+      421 sssrggttqs ssqsssqsna nsnsrsnteg dsqsssnsds qsntnrgsrs nansnsqsne
+      481 nsnsqsnans dsrsyiegds qsrsnsasqs ntnrnsrtns geksqsnrdr gnygdndddg
+      541 sngnwnnqst rgrndqsssn qasssssska ssssqtgqtq ssarsdasss snygnrgnsn
+      601 gdddsyydyd rdnayydddy ygdensygqr gpgrrgpgrg gpgwggpgrr qpgrggpggr
+      661 gpgrrgpggr gqpqsrrpfg vfafvadnin vdrsakycra vsrmgkfqte ydlmdwfvts
+      721 skassgilnq wlndlgsyys dmtlaafkii acikgdrsgn dicdsgygtd mdweeagdln
+      781 svddvidfyn vkdnsrikny lgddysgskq vvieqinais qlfarspdaw crndlytvyl
+      841 rglvitvtia nsvhpalgdl vvsyclrqig sivnqdeidl qslerdmndi iprgngdnfn
+      901 ravnpatdtd yniakqngwn sngningrtn nngrgesyrs nnngyqdyny dnyddytnse
+      961 trvksqnrnd rktrnyqnrr syqsgdktfg qgstnsqyrd rqnstesgtf enknsnvsrn
+     1021 snsernnveq qngnssfnny rnsnsnknqe kersrrrnen nettdgdssg ssnnngisnr
+     1081 rssndnnnrn rgnsentqse qnssrftgss stsesnstrk tgstsgsrst srsksaness
+     1141 easarrasns nrganrnnsn tgtgstssse sgssngssss karssssgks sssgnsnsfs
+     1201 gtssssansa tnannsssgs ntsgggnasn vssssnanss tsgsntsggg nasdasssss
+     1261 annsfsegsa sgasssssan gsssknsasd asssssanss snganssgna gkgnagggkn
+     1321 rkyrkltkdg aasqyeensd ttvtdekgrk ksqkasksgs eqseqskett kiessdgstl
+     1381 sqsksassqs qtqssseeey eefk
+//
