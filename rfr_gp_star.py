@@ -92,7 +92,6 @@ res = gp_minimize(
     acq_optimizer="lbfgs",
     x0=X.to_numpy().tolist(),
     y0=y_neg,
-    verbose=True,
     n_jobs=-1,
 )
 
