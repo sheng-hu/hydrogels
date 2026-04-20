@@ -8,8 +8,8 @@ import hu_utils
 
 hu_utils = importlib.reload(hu_utils)
 
-plt.style.use("classic")
 import matplotlib.pyplot as plt
+plt.style.use("classic")
 import numpy as np
 import pandas as pd
 import seaborn as sns
